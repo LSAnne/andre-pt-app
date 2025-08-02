@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Tips</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .nutrition-container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .nutrition-container h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .tip {
+      display: flex;
+      align-items: flex-start;
+      gap: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    .tip-icon {
+      font-size: 1.8em;
+      background: #000;
+      color: #fff;
+      padding: 0.4em 0.8em;
+      border-radius: 6px;
+    }
+
+    .tip-content h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .tip-content p {
+      margin: 0.3em 0 0;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .tip {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Andre Georgiou Personal Training</h1>
+          <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="socials.html">Socials</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQs</a>
+        <a href="client-upload.html"> Client Upload</a>
+</header>
+
+<main>
+  <div class="nutrition-container">
+    <h2>Nutrition Tips for Sustainable Results</h2>
+
+    <div class="tip">
+      <div class="tip-icon">🥗</div>
+      <div class="tip-content">
+        <h3>Prioritise Protein</h3>
+        <p>Include a source of protein with every meal — it supports muscle growth and keeps you fuller longer.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-icon">💧</div>
+      <div class="tip-content">
+        <h3>Stay Hydrated</h3>
+        <p>Drinking enough water helps with energy, performance, digestion and appetite regulation. Aim for 2–3L/day.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-icon">🕒</div>
+      <div class="tip-content">
+        <h3>Consistency Over Perfection</h3>
+        <p>Don’t chase perfection. Focus on eating mostly whole foods and getting back on track after off days.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-icon">📊</div>
+      <div class="tip-content">
+        <h3>Track or Reflect</h3>
+        <p>Whether it’s MyFitnessPal, photos, or a food diary — track what works and be honest with what doesn’t.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-icon">🥄</div>
+      <div class="tip-content">
+        <h3>Eat Mindfully</h3>
+        <p>Slow down, chew thoroughly, and eat without distractions. It improves digestion and helps with portion control.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Personal Trainer App</p>
+</footer>
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('.navbar ul');
+    nav.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

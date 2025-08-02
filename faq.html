@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1.5em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 1em 0;
+    }
+
+    .faq-item h3 {
+      margin: 0;
+      font-size: 1.2em;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      display: none;
+      padding-top: 0.5em;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item h3::after {
+      content: "+";
+      font-weight: bold;
+    }
+
+    .faq-item.active h3::after {
+      content: "-";
+    }
+
+    @media (max-width: 768px) {
+      .faq-container {
+        margin: 1em;
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Andre Georgiou Personal Training</h1>
+  <      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="socials.html">Socials</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQs</a>
+        <a href="client-upload.html"> Client Upload</a>
+  </nav>
+</header>
+
+<main>
+  <div class="faq-container">
+    <h2 style="text-align:center;">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What’s included in online coaching?</h3>
+      <div class="faq-answer">You get a personalised training plan, progress tracking, accountability check-ins, and messaging support to keep you on track.</div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need a gym membership?</h3>
+      <div class="faq-answer">No — I’ll tailor your plan to what’s available to you, whether that’s at home, outdoors, or in a gym.</div>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I submit progress photos?</h3>
+      <div class="faq-answer">Use the <a href="client-upload.html">Client Upload</a> page to send your photos or Google Sheets. Just paste the link and click submit!</div>
+    </div>
+
+    <div class="faq-item">
+      <h3>How soon can I expect results?</h3>
+      <div class="faq-answer">Most clients feel and see progress within 4–6 weeks of consistent training, but the real win is building habits that last.</div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I ask questions between check-ins?</h3>
+      <div class="faq-answer">Yes! You’ll have access to WhatsApp or email support for questions, form checks, or motivation.</div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Personal Trainer App</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item h3').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
